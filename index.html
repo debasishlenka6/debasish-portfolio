@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Debasish Lenka - Systems and Network Engineer</title>
+<link rel="icon" type="image/png" href="images/icons/photo2.png">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+* {
+  cursor: auto;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, white 0%, white 30%, #cc3333 50%, #aa0000 80%, transparent 100%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+  box-shadow: 0 0 10px rgba(204, 51, 51, 0.3), 0 0 20px rgba(170, 0, 0, 0.2);
+}
+
+.custom-cursor.hover {
+  transform: scale(1.5);
+  background: radial-gradient(circle, white 0%, white 40%, #dd4444 60%, #bb0000 90%, transparent 100%);
+}
+
+.skill-name i {
+  margin-right: 8px;
+  color: inherit !important;
+}
+
+.skill-name i.bi-headset {
+  color: #007bff !important;
+}
+
+.skill-name i.bi-microsoft {
+  color: #00a1f1 !important;
+}
+
+.skill-name i.bi-envelope-at {
+  color: #0078d4 !important;
+}
+
+.skill-name i.bi-tools {
+  color: #6c757d !important;
+}
+
+.skill-name i.bi-windows {
+  color: #00a1f1 !important;
+}
+
+.skill-name i.bi-router {
+  color: #28a745 !important;
+}
+
+.skill-name i.bi-globe {
+  color: #17a2b8 !important;
+}
+
+.skill-name i.bi-hdd {
+  color: #6f42c1 !important;
+}
+
+.skill-name i.bi-pc-display {
+  color: #495057 !important;
+}
+
+.skill-name i.bi-cloud {
+  color: #0078d4 !important;
+}
+
+.skill-name i.bi-person-badge {
+  color: #0078d4 !important;
+}
+
+.skill-name i.bi-envelope-open {
+  color: #0078d4 !important;
+}
+
+.skill-name i.bi-app {
+  color: #20c997 !important;
+}
+
+.skill-name i.bi-gear {
+  color: #6c757d !important;
+}
+
+.skill-name i.bi-ticket {
+  color: #fd7e14 !important;
+}
+
+.skill-name i.bi-kanban {
+  color: #0052cc !important;
+}
+
+.skill-name i.bi-diagram-3 {
+  color: #28a745 !important;
+}
+
+.skill-name i.bi-wifi {
+  color: #17a2b8 !important;
+}
+
+.skill-name i.bi-broadcast {
+  color: #ffc107 !important;
+}
+
+.skill-name i.bi-server {
+  color: #6c757d !important;
+}
+
+.skill-name i.bi-shield-check {
+  color: #dc3545 !important;
+}
+
+.skill-name i.bi-laptop {
+  color: #6c757d !important;
+}
+
+.skill-name i.bi-shield {
+  color: #0078d4 !important;
+}
+
+.skill-name i.bi-arrow-repeat {
+  color: #28a745 !important;
+}
+
+.skill-name i.bi-database-lock {
+  color: #e83e8c !important;
+}
+
+.skill-name i.bi-layers {
+  color: #6f42c1 !important;
+}
+
+.skill-name i.bi-hdd-stack {
+  color: #0078d4 !important;
+}
+
+.skill-name i.bi-cloud-arrow-up {
+  color: #ff9900 !important;
+}
+
+.skill-name i.bi-terminal {
+  color: #000000 !important;
+}
+
+/* Content Protection */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+.cert-image img {
+  pointer-events: auto;
+}
+
+.cert-card {
+  transition: all 0.3s ease;
+  cursor: default;
+  z-index: 1;
+}
+
+.cert-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+  z-index: 10;
+  position: relative;
+}
+
+::selection {
+  background: transparent;
+}
+
+::-moz-selection {
+  background: transparent;
+}
+
+/* Certificate Popup Modal */
+.cert-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  backdrop-filter: blur(5px);
+}
+
+.cert-popup-content {
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+}
+
+.cert-popup img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  user-drag: none;
+}
+
+.cert-popup-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.cert-image {
+  position: relative;
+  overflow: visible;
+  border-radius: 8px;
+}
+
+.cert-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.cert-image:hover::before {
+  background: rgba(0, 255, 136, 0.1);
+}
+
+/* Enhanced Certificate Protection */
+.cert-card {
+  position: relative;
+}
+
+.cert-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.cert-card:hover::after {
+  background: linear-gradient(45deg, rgba(0,255,136,0.05) 0%, rgba(0,255,136,0.1) 50%, rgba(0,255,136,0.05) 100%);
+}
+
+/* Mobile Responsiveness - Minimal adjustments only */
+@media (max-width: 768px) {
+  /* Disable custom cursor on touch devices */
+  * {
+    cursor: auto !important;
+  }
+  
+  .custom-cursor {
+    display: none;
+  }
+  
+  /* Ensure proper mobile viewport scaling */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Make sure containers don't overflow */
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Ensure buttons remain visible and functional */
+  .btn {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Ensure hero buttons stack properly on very small screens */
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+  
+  /* Make sure navigation is accessible */
+  .nav-links {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Only for very small screens - minimal adjustments */
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="custom-cursor" id="cursor" style="display: none;"></div>
+
+<header>
+  <nav class="container">
+    <div class="logo">Debasish Lenka</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm<br><span class="highlight">Debasish Lenka</span><br><span class="subtitle">Systems and Network Engineer</span></h1>
+        <p>Technical Support Engineer with hands-on experience in system administration and network support. Proficient in OS installation, Outlook and Office 365 management, domain joining, and video conferencing setup.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="downloadCV()">Download CV</button>
+          <button class="btn btn-outline" onclick="startProject()">Let's Connect</button>
+          <button class="btn btn-outline" onclick="openLinkedIn()"><img src="images/icons/linkedin.svg" alt="LinkedIn" style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;">LinkedIn</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/icons/photo2.png" alt="Debasish Lenka">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm a dedicated IT Support Engineer with comprehensive expertise in system administration and network infrastructure management. My professional focus centers on delivering enterprise-level technical solutions and maintaining optimal system performance.</p>
+        <p>My technical proficiency encompasses OS installation, Outlook and Office 365 administration, domain integration, and video conferencing deployment. I excel in network operations including switching, VLAN configuration, and L2/L3 switch management, complemented by firewall support and wireless access point administration.</p>
+        <p>I bring strong capabilities in troubleshooting complex technical issues, maintaining detailed documentation, and fostering effective collaboration with cross-functional IT teams. My approach emphasizes customer satisfaction, SLA compliance, and continuous improvement in service delivery.</p>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <h3>95%</h3>
+          <p>First-Call Resolution</p>
+        </div>
+        <div class="stat">
+          <h3>2+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat">
+          <h3>5+</h3>
+          <p>Certifications</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="skills-header">
+      <h2>Technical Skills</h2>
+      <p class="skills-intro">Here are my main technical skills and how much progress I've made in them.</p>
+    </div>
+
+    <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="3"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <!-- Slide 1 - First 9 Skills -->
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-95">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-headset"></i> IT Technical Support</div>
+                  <div class="skill-percent blue">95%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress blue" data-percent="95"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-95">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-microsoft"></i> O365 Admin</div>
+                  <div class="skill-percent blue">95%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress blue" data-percent="95"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-95">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-envelope-at"></i> Outlook</div>
+                  <div class="skill-percent blue">95%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress blue" data-percent="95"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-95">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-tools"></i> Hardware Troubleshooting</div>
+                  <div class="skill-percent blue">95%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress blue" data-percent="95"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-90">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-windows"></i> Windows ADDS</div>
+                  <div class="skill-percent blue">90%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress blue" data-percent="90"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-90">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-router"></i> DHCP</div>
+                  <div class="skill-percent blue">90%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress blue" data-percent="90"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-90">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-globe"></i> DNS</div>
+                  <div class="skill-percent blue">90%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress blue" data-percent="90"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-90">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-hdd"></i> Operating System Installation</div>
+                  <div class="skill-percent blue">90%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress blue" data-percent="90"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-90">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-pc-display"></i> Desktop Troubleshooting</div>
+                  <div class="skill-percent blue">90%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress blue" data-percent="90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 - Next 9 Skills -->
+        <div class="carousel-item">
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-85">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-cloud"></i> Azure Active Directory</div>
+                  <div class="skill-percent green">85%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress green" data-percent="85"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-85">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-person-badge"></i> Entra ID</div>
+                  <div class="skill-percent green">85%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress green" data-percent="85"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-85">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-envelope-open"></i> Exchange</div>
+                  <div class="skill-percent green">85%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress green" data-percent="85"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-85">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-app"></i> Application Support</div>
+                  <div class="skill-percent green">85%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress green" data-percent="85"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-85">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-gear"></i> IT Systems Administration</div>
+                  <div class="skill-percent green">85%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress green" data-percent="85"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-80">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-ticket"></i> Service Now Ticketing</div>
+                  <div class="skill-percent green">80%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress green" data-percent="80"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-80">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-kanban"></i> JIRA Service Desk</div>
+                  <div class="skill-percent green">80%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress green" data-percent="80"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-80">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-diagram-3"></i> Routing and Switching</div>
+                  <div class="skill-percent green">80%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress green" data-percent="80"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-80">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-wifi"></i> WLAN Protocols</div>
+                  <div class="skill-percent green">80%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress green" data-percent="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 - Next 9 Skills -->
+        <div class="carousel-item">
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-80">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-broadcast"></i> WLC Management</div>
+                  <div class="skill-percent green">80%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress green" data-percent="80"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-80">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-server"></i> Server Management</div>
+                  <div class="skill-percent green">80%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress green" data-percent="80"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-75">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-shield-check"></i> Endpoint Security</div>
+                  <div class="skill-percent purple">75%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress purple" data-percent="75"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-75">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-laptop"></i> Endpoint Management</div>
+                  <div class="skill-percent purple">75%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress purple" data-percent="75"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-75">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-shield"></i> Windows Defender</div>
+                  <div class="skill-percent purple">75%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress purple" data-percent="75"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-75">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-arrow-repeat"></i> Patch Management</div>
+                  <div class="skill-percent purple">75%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress purple" data-percent="75"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-70">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-database-lock"></i> ManageEngine-DLP</div>
+                  <div class="skill-percent purple">70%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress purple" data-percent="70"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-70">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-layers"></i> Virtualization Management</div>
+                  <div class="skill-percent purple">70%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress purple" data-percent="70"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-70">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-hdd-stack"></i> Hyper-V</div>
+                  <div class="skill-percent purple">70%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress purple" data-percent="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 - Last 2 Skills -->
+        <div class="carousel-item">
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-65">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-cloud-arrow-up"></i> Amazon Web Services EC2</div>
+                  <div class="skill-percent yellow">65%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress yellow" data-percent="65"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="skill-card level-60">
+                <div class="skill-header">
+                  <div class="skill-name"><i class="bi bi-terminal"></i> Linux Basics</div>
+                  <div class="skill-percent yellow">60%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress yellow" data-percent="60"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+        <i class="bi bi-chevron-left" style="font-size: 24px; color: #fff;"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+        <i class="bi bi-chevron-right" style="font-size: 24px; color: #fff;"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="certifications" id="certifications">
+  <div class="container">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card" onmouseenter="showCertPreview(this, 'images/certificates/Network Security_IBM.jpg')" onmouseleave="hideCertPreview()">
+        <div class="cert-image">
+          <img src="images/certificates/Network Security_IBM.jpg" alt="IBM Computer Networks" oncontextmenu="return false;" ondragstart="return false;">
+        </div>
+        <h3>Computer Networks and Network Security</h3>
+        <p>IBM</p>
+        <div class="cert-skills">
+          <span class="skill-tag">Network Infrastructure</span>
+          <span class="skill-tag">TCP/IP</span>
+          <span class="skill-tag">Subnetting</span>
+          <span class="skill-tag">VLAN</span>
+          <span class="skill-tag">Routing Protocols</span>
+          <span class="skill-tag">Network Security</span>
+          <span class="skill-tag">Firewall Configuration</span>
+          <span class="skill-tag">VPN Setup</span>
+          <span class="skill-tag">Network Troubleshooting</span>
+        </div>
+      </div>
+      <div class="cert-card" onmouseenter="showCertPreview(this, 'images/certificates/Fortinet Cybersecurity Certificate.png')" onmouseleave="hideCertPreview()">
+        <div class="cert-image">
+          <img src="images/certificates/Fortinet Cybersecurity Certificate.png" alt="Fortinet FCA" oncontextmenu="return false;" ondragstart="return false;">
+        </div>
+        <h3>Fortinet Certified Associate</h3>
+        <p>Cybersecurity</p>
+        <div class="cert-skills">
+          <span class="skill-tag">Cybersecurity Fundamentals</span>
+          <span class="skill-tag">Threat Detection</span>
+          <span class="skill-tag">Security Policies</span>
+          <span class="skill-tag">Incident Response</span>
+          <span class="skill-tag">Risk Assessment</span>
+          <span class="skill-tag">Vulnerability Management</span>
+          <span class="skill-tag">Security Monitoring</span>
+          <span class="skill-tag">Compliance</span>
+        </div>
+      </div>
+      <div class="cert-card" onmouseenter="showCertPreview(this, 'images/certificates/Sys Admin - Google.jpg')" onmouseleave="hideCertPreview()">
+        <div class="cert-image">
+          <img src="images/certificates/Sys Admin - Google.jpg" alt="Google System Admin" oncontextmenu="return false;" ondragstart="return false;">
+        </div>
+        <h3>System Admin & Infrastructure Services</h3>
+        <p>Google</p>
+        <div class="cert-skills">
+          <span class="skill-tag">System Administration</span>
+          <span class="skill-tag">Infrastructure Services</span>
+          <span class="skill-tag">Server Management</span>
+          <span class="skill-tag">Cloud Services</span>
+          <span class="skill-tag">Directory Services</span>
+          <span class="skill-tag">DNS/DHCP</span>
+          <span class="skill-tag">Group Policy</span>
+          <span class="skill-tag">Backup & Recovery</span>
+        </div>
+      </div>
+      <div class="cert-card" onmouseenter="showCertPreview(this, 'images/certificates/ccna.png')" onmouseleave="hideCertPreview()">
+        <div class="cert-image">  
+          <img src="images/certificates/ccna.png" alt="CCNA" oncontextmenu="return false;" ondragstart="return false;">
+        </div>
+        <h3>CCNA 200-301</h3>
+        <p>Simplilearn</p>
+        <div class="cert-skills">
+          <span class="skill-tag">Routing & Switching</span>
+          <span class="skill-tag">VLAN Configuration</span>
+          <span class="skill-tag">OSPF</span>
+          <span class="skill-tag">EIGRP</span>
+          <span class="skill-tag">Network Troubleshooting</span>
+          <span class="skill-tag">Access Control Lists</span>
+          <span class="skill-tag">Network Address Translation</span>
+          <span class="skill-tag">Spanning Tree Protocol</span>
+        </div>
+      </div>
+      <div class="cert-card" onmouseenter="showCertPreview(this, 'images/certificates/Cisco Networking .png')" onmouseleave="hideCertPreview()">
+        <div class="cert-image">
+          <img src="images/certificates/Cisco Networking .png" alt="Cisco Networking" oncontextmenu="return false;" ondragstart="return false;">
+        </div>
+        <h3>Cisco Networking</h3>
+        <p>Cisco</p>
+        <div class="cert-skills">
+          <span class="skill-tag">Cisco IOS</span>
+          <span class="skill-tag">Switch Configuration</span>
+          <span class="skill-tag">Router Setup</span>
+          <span class="skill-tag">Network Protocols</span>
+          <span class="skill-tag">LAN/WAN Technologies</span>
+          <span class="skill-tag">Network Design</span>
+          <span class="skill-tag">Port Configuration</span>
+          <span class="skill-tag">Network Monitoring</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certificate Popup Modal -->
+<div id="certPopup" class="cert-popup">
+  <div class="cert-popup-content">
+    <button class="cert-popup-close" onclick="closeCertPopup()">&times;</button>
+    <img id="certPopupImg" src="" alt="Certificate" oncontextmenu="return false;" ondragstart="return false;">
+  </div>
+</div>
+
+<section class="experience" id="experience">
+  <div class="container">
+    <h2>Work Experience</h2>
+    <div class="experience-timeline">
+      <div class="timeline-item" onmouseenter="showExpandedExperience(this, 1)" onmouseleave="hideExpandedExperience(this)">
+        <div class="timeline-content">
+          <div class="job-title">Technical Support Engineer</div>
+          <div class="company-name">Dietary Business Intelligence</div>
+          <div class="job-duration">July 2025 - Present</div>
+          <div class="job-description">
+            Enhanced customer satisfaction with 95% first-call resolution rate. Managed ADDS, Outlook, O365 admin, and IT helpdesk support. Configured L2/L3 switches, Cisco Meraki Firewall, and wireless networks.
+          </div>
+          <div class="experience-expanded" style="display: none;">
+            <h4>Key Responsibilities & Skills:</h4>
+            <ul>
+              <li>Configured L2/L3 switches and Cisco Meraki Firewall</li>
+              <li>Managed wireless networks (Access Points - Unifi)</li>
+              <li>Ensured IT compliance, data security, and system uptime</li>
+              <li>Provided L1 & L2 support for desktops, networks, and firewall</li>
+              <li>Administered Office 365 and Azure Active Directory</li>
+            </ul>
+            <div class="experience-skills">
+              <span class="skill-tag">Cisco Meraki</span>
+              <span class="skill-tag">O365 Admin</span>
+              <span class="skill-tag">Azure AD</span>
+              <span class="skill-tag">L2/L3 Switching</span>
+              <span class="skill-tag">Firewall Management</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+      
+      <div class="timeline-item" onmouseenter="showExpandedExperience(this, 2)" onmouseleave="hideExpandedExperience(this)">
+        <div class="timeline-content">
+          <div class="job-title">Executive</div>
+          <div class="company-name">Thyrocare Technologies</div>
+          <div class="job-duration">December 2024 - April 2025</div>
+          <div class="job-description">
+            Managed laboratory operations, handled system-based reporting and data entry. Worked with laboratory information systems (LIS) for test processing and report management.
+          </div>
+          <div class="experience-expanded" style="display: none;">
+            <h4>Key Responsibilities & Skills:</h4>
+            <ul>
+              <li>Worked with laboratory information systems (LIS)</li>
+              <li>Managed test processing and report management</li>
+              <li>Handled system-based reporting and data entry</li>
+              <li>Ensured data accuracy and quality control</li>
+            </ul>
+            <div class="experience-skills">
+              <span class="skill-tag">LIS Systems</span>
+              <span class="skill-tag">Data Management</span>
+              <span class="skill-tag">Quality Control</span>
+              <span class="skill-tag">Report Generation</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+      
+      <div class="timeline-item" onmouseenter="showExpandedExperience(this, 3)" onmouseleave="hideExpandedExperience(this)">
+        <div class="timeline-content">
+          <div class="job-title">Field Technician</div>
+          <div class="company-name">Rajkumari Foundation</div>
+          <div class="job-duration">December 2023 - October 2024</div>
+          <div class="job-description">
+            Provided on-site technical support for laboratory and healthcare equipment. Performed first-level troubleshooting and coordinated escalations with vendors or central technical teams.
+          </div>
+          <div class="experience-expanded" style="display: none;">
+            <h4>Key Responsibilities & Skills:</h4>
+            <ul>
+              <li>Performed first-level troubleshooting</li>
+              <li>Coordinated escalations with vendors and technical teams</li>
+              <li>Ensured proper documentation and preventive checks</li>
+              <li>Assisted in installation and basic configuration</li>
+              <li>Ensured adherence to quality standards and timelines</li>
+            </ul>
+            <div class="experience-skills">
+              <span class="skill-tag">Hardware Troubleshooting</span>
+              <span class="skill-tag">Equipment Installation</span>
+              <span class="skill-tag">Documentation</span>
+              <span class="skill-tag">Quality Assurance</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Tooltip -->
+<div id="experienceTooltip" class="experience-tooltip"></div>
+
+<section class="education" id="education">
+  <div class="container">
+    <h2>Education</h2>
+    <div class="education-grid">
+      <div class="education-item">
+        <div class="education-header">
+          <h3>B.Sc. - Computer Science</h3>
+          <div class="university">Utkal University, Bhubaneswar</div>
+          <div class="education-duration">2019</div>
+        </div>
+        <div class="education-description">
+          Bachelor of Science in Computer Science with focus on programming fundamentals, data structures, and computer systems, Networking.
+        </div>
+      </div>
+      
+      <div class="education-item">
+        <div class="education-header">
+          <h3>Technical Training - Networking Course</h3>
+          <div class="university">NSDC</div>
+          <div class="education-duration">January 2024 - March 2025</div>
+        </div>
+        <div class="education-description">
+          Comprehensive training in networking fundamentals, routing, switching, Windows Server, L2/L3 Switch, VLAN concepts, and basic firewall understanding with hands-on labs.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project" onclick="openProject(1)">
+        <div class="project-image">
+          <img src="images/projects/network-infrastructure.jpg" alt="Network Infrastructure" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="project-placeholder" style="display:none;">Network Infrastructure</div>
+        </div>
+        <div class="project-content">
+          <h3>Network Infrastructure Support</h3>
+          <p>Configured and managed enterprise network infrastructure including L2/L3 switches, VLAN setup, and Cisco Meraki firewall configuration for improved security.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Cisco Meraki</span>
+            <span class="tech-tag">VLAN</span>
+            <span class="tech-tag">L2/L3 Switch</span>
+          </div>
+        </div>
+      </div>
+      <div class="project" onclick="openProject(2)">
+        <div class="project-image">
+          <img src="images/projects/o365-administration.jpg" alt="O365 Administration" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="project-placeholder" style="display:none;">O365 Administration</div>
+        </div>
+        <div class="project-content">
+          <h3>Office 365 & Azure AD Management</h3>
+          <p>Administered Office 365 environment and Azure Active Directory for 200+ users, managing user access control and ensuring IT compliance.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Office 365</span>
+            <span class="tech-tag">Azure AD</span>
+            <span class="tech-tag">Exchange</span>
+          </div>
+        </div>
+      </div>
+      <div class="project" onclick="openProject(3)">
+        <div class="project-image">
+          <img src="images/projects/helpdesk-support.jpg" alt="IT Helpdesk Support" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="project-placeholder" style="display:none;">IT Helpdesk Support</div>
+        </div>
+        <div class="project-content">
+          <h3>Technical Support & Troubleshooting</h3>
+          <p>Provided L1 & L2 support achieving 95% first-call resolution rate using ServiceNow, JIRA, and Zoho Desk ticketing systems.</p>
+          <div class="project-tech">
+            <span class="tech-tag">ServiceNow</span>
+            <span class="tech-tag">JIRA</span>
+            <span class="tech-tag">Hardware Support</span>
+          </div>
+        </div>
+      </div>
+      <div class="project" onclick="openProject(4)">
+        <div class="project-image">
+          <img src="images/projects/cisco-meraki-mx75.jpg" alt="Cisco Meraki MX75" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="project-placeholder" style="display:none;">Cisco Meraki MX75</div>
+        </div>
+        <div class="project-content">
+          <h3>Cisco Meraki MX75 Firewall Management</h3>
+          <p>Configured and managed Cisco Meraki MX75 firewall for enterprise security, including VPN setup, content filtering, and network segmentation policies.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Cisco Meraki</span>
+            <span class="tech-tag">MX75</span>
+            <span class="tech-tag">VPN</span>
+            <span class="tech-tag">Security Policies</span>
+          </div>
+        </div>
+      </div>
+      <div class="project" onclick="openProject(5)">
+        <div class="project-image">
+          <img src="images/projects/unifi-access-points.jpg" alt="Unifi Access Points" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="project-placeholder" style="display:none;">Unifi Access Points</div>
+        </div>
+        <div class="project-content">
+          <h3>Unifi Access Points configured and DHCP enabled</h3>
+          <p>Deployed and configured Unifi wireless access points with DHCP services, ensuring seamless wireless connectivity and network management across enterprise environments.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Unifi</span>
+            <span class="tech-tag">Access Points</span>
+            <span class="tech-tag">DHCP</span>
+            <span class="tech-tag">Wireless</span>
+          </div>
+        </div>
+      </div>
+      <div class="project" onclick="openProject(6)">
+        <div class="project-image">
+          <img src="images/projects/server-hosting-fqdn.jpg" alt="Server Hosting FQDN" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="project-placeholder" style="display:none;">ManageEngine DLP</div>
+        </div>
+        <div class="project-content">
+          <h3>ManageEngine DLP Server Implementation</h3>
+          <p>Deployed ManageEngine Data Loss Prevention server with FQDN configuration and public IP access for comprehensive data security and centralized computer management.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Data Loss Prevention</span>
+            <span class="tech-tag">Central Management</span>
+            <span class="tech-tag">Application Control</span>
+            <span class="tech-tag">Remote Troubleshooting</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Let's Work Together</h2>
+    <p>Ready to optimize your IT infrastructure? Let's discuss your technical requirements.</p>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <strong>Phone</strong><br>
+            <a href="tel:+917008378988">+91 7008378988</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/479px-WhatsApp_icon.png" alt="WhatsApp" style="width: 32px; height: 32px;">
+          </div>
+          <div>
+            <strong>WhatsApp</strong><br>
+            <a href="https://wa.me/917008378988" target="_blank">+91 7008378988</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <strong>Email</strong><br>
+            <a href="mailto:debasishlenka@myyahoo.com">debasishlenka@myyahoo.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💼</div>
+          <div>
+            <strong>LinkedIn</strong><br>
+            <a href="https://linkedin.com/in/debasish-lenka-0a9815352" target="_blank">LinkedIn Profile</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h3 style="color: #00ff88; margin-bottom: 20px;">Send Message</h3>
+        <form action="https://formspree.io/f/meezgaqz" method="POST" onsubmit="clearForm()">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project or requirements..." required></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="New Contact Form Submission">
+          <input type="hidden" name="_next" value="#contact">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="visitor-counter">
+      <p>Site Visitors: <span id="visitor-count">Loading...</span></p>
+    </div>
+    <p>© 2024 Debasish Lenka. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+<script>
+// Content Protection
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if (e.ctrlKey && (e.key === 's' || e.key === 'a' || e.key === 'c' || e.key === 'v' || e.key === 'x' || e.key === 'p' || e.key === 'u')) e.preventDefault();
+  if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.shiftKey && e.key === 'C')) e.preventDefault();
+  // Block screenshot keys
+  if (e.key === 'PrintScreen' || (e.altKey && e.key === 'PrintScreen') || (e.ctrlKey && e.key === 'PrintScreen')) e.preventDefault();
+});
+document.addEventListener('selectstart', e => e.preventDefault());
+document.addEventListener('dragstart', e => e.preventDefault());
+
+// Certificate Functions
+function showCertPreview(element, imageSrc) {
+  // This function is now handled by CSS :hover
+}
+
+function hideCertPreview() {
+  // This function is now handled by CSS
+}
+
+function openCertPopup(imageSrc) {
+  const popup = document.getElementById('certPopup');
+  const img = document.getElementById('certPopupImg');
+  img.src = imageSrc;
+  popup.style.display = 'flex';
+  
+  // Enhanced protection when popup is open
+  document.body.style.overflow = 'hidden';
+  
+  // Block additional screenshot attempts
+  const blockScreenshot = (e) => {
+    if (e.key === 'PrintScreen' || e.keyCode === 44) {
+      e.preventDefault();
+      return false;
+    }
+  };
+  document.addEventListener('keydown', blockScreenshot);
+  document.addEventListener('keyup', blockScreenshot);
+}
+
+function closeCertPopup() {
+  const popup = document.getElementById('certPopup');
+  popup.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Close popup when clicking outside
+document.getElementById('certPopup').addEventListener('click', function(e) {
+  if (e.target === this) {
+    closeCertPopup();
+  }
+});
+
+// Block right-click specifically on certificates
+document.querySelectorAll('.cert-image img').forEach(img => {
+  img.addEventListener('contextmenu', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
+  });
+  
+  img.addEventListener('dragstart', e => {
+    e.preventDefault();
+    return false;
+  });
+});
+
+// Custom cursor functionality (disabled)
+// const cursor = document.getElementById('cursor');
+// const hoverElements = document.querySelectorAll('a, button, .project, .skill-card, .cert-card');
+
+// document.addEventListener('mousemove', (e) => {
+//   cursor.style.left = e.clientX - 10 + 'px';
+//   cursor.style.top = e.clientY - 10 + 'px';
+// });
+
+// hoverElements.forEach(element => {
+//   element.addEventListener('mouseenter', () => {
+//     cursor.classList.add('hover');
+//   });
+//   element.addEventListener('mouseleave', () => {
+//     cursor.classList.remove('hover');
+//   });
+// });
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
