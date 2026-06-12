@@ -2,7 +2,7 @@
 
 Personal portfolio website for **Debasish Lenka**, Systems and Network Engineer.
 
-🔗 **Live site:** https://YOUR_GITHUB_USERNAME.github.io/debasish-portfolio
+🔗 **Live site:** (https://debasishlenka6.github.io/debasish-portfolio)
 
 ## 📁 Project Structure
 
