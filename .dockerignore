@@ -1,0 +1,18 @@
+# Git history (not needed inside the image)
+.git
+.gitignore
+
+# Docs
+README.md
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Workflow files (not part of the website)
+.github/
+
+# Logs and env
+*.log
+.env
+.env.local
