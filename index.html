@@ -797,7 +797,7 @@ img {
     <div class="cert-grid">
       <div class="cert-card" onmouseenter="showCertPreview(this, 'images/certificates/network-security-ibm.jpg')" onmouseleave="hideCertPreview()">
         <div class="cert-image">
-          <img src="images/certificates/network-security-ibm.jpg" alt="IBM Computer Networks" oncontextmenu="return false;" ondragstart="return false;">
+          <img src="images/certificates/network-security-ibm.jpg" alt="IBM Computer Networks" ondragstart="return false;">
         </div>
         <h3>Computer Networks and Network Security</h3>
         <p>IBM</p>
@@ -815,7 +815,7 @@ img {
       </div>
       <div class="cert-card" onmouseenter="showCertPreview(this, 'images/certificates/fortinet-cybersecurity.png')" onmouseleave="hideCertPreview()">
         <div class="cert-image">
-          <img src="images/certificates/fortinet-cybersecurity.png" alt="Fortinet FCA" oncontextmenu="return false;" ondragstart="return false;">
+          <img src="images/certificates/fortinet-cybersecurity.png" alt="Fortinet FCA" ondragstart="return false;">
         </div>
         <h3>Fortinet Certified Associate</h3>
         <p>Cybersecurity</p>
@@ -832,7 +832,7 @@ img {
       </div>
       <div class="cert-card" onmouseenter="showCertPreview(this, 'images/certificates/sys-admin-google.jpg')" onmouseleave="hideCertPreview()">
         <div class="cert-image">
-          <img src="images/certificates/sys-admin-google.jpg" alt="Google System Admin" oncontextmenu="return false;" ondragstart="return false;">
+          <img src="images/certificates/sys-admin-google.jpg" alt="Google System Admin" ondragstart="return false;">
         </div>
         <h3>System Admin & Infrastructure Services</h3>
         <p>Google</p>
@@ -849,7 +849,7 @@ img {
       </div>
       <div class="cert-card" onmouseenter="showCertPreview(this, 'images/certificates/ccna.png')" onmouseleave="hideCertPreview()">
         <div class="cert-image">  
-          <img src="images/certificates/ccna.png" alt="CCNA" oncontextmenu="return false;" ondragstart="return false;">
+          <img src="images/certificates/ccna.png" alt="CCNA" ondragstart="return false;">
         </div>
         <h3>CCNA 200-301</h3>
         <p>Simplilearn</p>
@@ -866,7 +866,7 @@ img {
       </div>
       <div class="cert-card" onmouseenter="showCertPreview(this, 'images/certificates/cisco-networking.png')" onmouseleave="hideCertPreview()">
         <div class="cert-image">
-          <img src="images/certificates/cisco-networking.png" alt="Cisco Networking" oncontextmenu="return false;" ondragstart="return false;">
+          <img src="images/certificates/cisco-networking.png" alt="Cisco Networking" ondragstart="return false;">
         </div>
         <h3>Cisco Networking</h3>
         <p>Cisco</p>
@@ -889,7 +889,7 @@ img {
 <div id="certPopup" class="cert-popup">
   <div class="cert-popup-content">
     <button class="cert-popup-close" onclick="closeCertPopup()">&times;</button>
-    <img id="certPopupImg" src="" alt="Certificate" oncontextmenu="return false;" ondragstart="return false;">
+    <img id="certPopupImg" src="" alt="Certificate" ondragstart="return false;">
   </div>
 </div>
 
@@ -1193,7 +1193,6 @@ img {
 
 <script>
 // Content Protection
-document.addEventListener('contextmenu', e => e.preventDefault());
 document.addEventListener('keydown', e => {
   if (e.ctrlKey && (e.key === 's' || e.key === 'a' || e.key === 'c' || e.key === 'v' || e.key === 'x' || e.key === 'p' || e.key === 'u')) e.preventDefault();
   if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.shiftKey && e.key === 'C')) e.preventDefault();
@@ -1245,14 +1244,8 @@ document.getElementById('certPopup').addEventListener('click', function(e) {
   }
 });
 
-// Block right-click specifically on certificates
+// Prevent drag on certificate images
 document.querySelectorAll('.cert-image img').forEach(img => {
-  img.addEventListener('contextmenu', e => {
-    e.preventDefault();
-    e.stopPropagation();
-    return false;
-  });
-  
   img.addEventListener('dragstart', e => {
     e.preventDefault();
     return false;
