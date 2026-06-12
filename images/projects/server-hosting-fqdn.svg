@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="100%" style="stop-color:#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="dlp" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="100%" style="stop-color:#0066ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Server rack representation -->
+  <rect x="280" y="80" width="240" height="200" rx="6" fill="#111" stroke="#333" stroke-width="2"/>
+  <!-- Server units in rack -->
+  <rect x="295" y="95" width="210" height="30" rx="3" fill="#1a1a2e" stroke="#00ff88" stroke-width="1.5"/>
+  <circle cx="315" cy="110" r="5" fill="#00ff00"/>
+  <text x="450" y="115" text-anchor="middle" fill="#00ff88" font-size="11" font-family="monospace">ManageEngine DLP</text>
+  <rect x="295" y="135" width="210" height="30" rx="3" fill="#1a1a2e" stroke="#0066ff" stroke-width="1"/>
+  <circle cx="315" cy="150" r="5" fill="#00ff00"/>
+  <text x="450" y="155" text-anchor="middle" fill="#0066ff" font-size="11" font-family="monospace">Web Server (IIS)</text>
+  <rect x="295" y="175" width="210" height="30" rx="3" fill="#1a1a2e" stroke="#ff6600" stroke-width="1"/>
+  <circle cx="315" cy="190" r="5" fill="#ffaa00"/>
+  <text x="450" y="195" text-anchor="middle" fill="#ff6600" font-size="11" font-family="monospace">Database Server</text>
+  <rect x="295" y="215" width="210" height="30" rx="3" fill="#1a1a2e" stroke="#aa00ff" stroke-width="1"/>
+  <circle cx="315" cy="230" r="5" fill="#00ff00"/>
+  <text x="450" y="235" text-anchor="middle" fill="#aa00ff" font-size="11" font-family="monospace">DNS / FQDN</text>
+  <rect x="295" y="255" width="210" height="15" rx="2" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
+  <!-- FQDN label -->
+  <rect x="100" y="120" width="150" height="45" rx="8" fill="#1a1a2e" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="175" y="140" text-anchor="middle" fill="#00ff88" font-size="10" font-family="monospace">FQDN Configured</text>
+  <text x="175" y="157" text-anchor="middle" fill="#888" font-size="9" font-family="monospace">dlp.company.local</text>
+  <line x1="250" y1="143" x2="280" y2="143" stroke="#00ff88" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Public IP label -->
+  <rect x="550" y="120" width="155" height="45" rx="8" fill="#1a1a2e" stroke="#0066ff" stroke-width="1.5"/>
+  <text x="627" y="140" text-anchor="middle" fill="#0066ff" font-size="10" font-family="monospace">Public IP Access</text>
+  <text x="627" y="157" text-anchor="middle" fill="#888" font-size="9" font-family="monospace">Port Forwarding</text>
+  <line x1="520" y1="143" x2="550" y2="143" stroke="#0066ff" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- DLP features -->
+  <rect x="80" y="300" width="140" height="50" rx="8" fill="#1a1a2e" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="150" y="322" text-anchor="middle" fill="#00ff88" font-size="10" font-family="Arial">Data Loss Prevention</text>
+  <text x="150" y="340" text-anchor="middle" fill="#666" font-size="9" font-family="Arial">Policy Enforcement</text>
+  <rect x="240" y="300" width="140" height="50" rx="8" fill="#1a1a2e" stroke="#0066ff" stroke-width="1.5"/>
+  <text x="310" y="322" text-anchor="middle" fill="#0066ff" font-size="10" font-family="Arial">Central Management</text>
+  <text x="310" y="340" text-anchor="middle" fill="#666" font-size="9" font-family="Arial">All Endpoints</text>
+  <rect x="400" y="300" width="140" height="50" rx="8" fill="#1a1a2e" stroke="#ff6600" stroke-width="1.5"/>
+  <text x="470" y="322" text-anchor="middle" fill="#ff6600" font-size="10" font-family="Arial">App Control</text>
+  <text x="470" y="340" text-anchor="middle" fill="#666" font-size="9" font-family="Arial">Whitelisting</text>
+  <rect x="560" y="300" width="140" height="50" rx="8" fill="#1a1a2e" stroke="#aa00ff" stroke-width="1.5"/>
+  <text x="630" y="322" text-anchor="middle" fill="#aa00ff" font-size="10" font-family="Arial">Remote Support</text>
+  <text x="630" y="340" text-anchor="middle" fill="#666" font-size="9" font-family="Arial">Troubleshooting</text>
+  <!-- Title -->
+  <text x="400" y="383" text-anchor="middle" fill="#ffffff" font-size="15" font-family="Arial, sans-serif" font-weight="bold">ManageEngine DLP Server Implementation</text>
+</svg>

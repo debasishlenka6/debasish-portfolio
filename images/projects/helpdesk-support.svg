@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="100%" style="stop-color:#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="100%" style="stop-color:#00cc66"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Ticket cards -->
+  <rect x="80" y="80" width="190" height="110" rx="10" fill="#1a1a2e" stroke="#00ff88" stroke-width="1.5"/>
+  <rect x="80" y="80" width="190" height="28" rx="10" fill="#00ff88" opacity="0.2"/>
+  <text x="175" y="100" text-anchor="middle" fill="#00ff88" font-size="11" font-family="monospace">#TKT-001 RESOLVED</text>
+  <text x="175" y="125" text-anchor="middle" fill="#ccc" font-size="10" font-family="Arial">Outlook not loading</text>
+  <text x="175" y="143" text-anchor="middle" fill="#ccc" font-size="10" font-family="Arial">Priority: HIGH</text>
+  <text x="175" y="161" text-anchor="middle" fill="#00ff88" font-size="10" font-family="Arial">✓ First Call Resolution</text>
+  <text x="175" y="178" text-anchor="middle" fill="#888" font-size="9" font-family="Arial">ServiceNow</text>
+
+  <rect x="305" y="80" width="190" height="110" rx="10" fill="#1a1a2e" stroke="#0066ff" stroke-width="1.5"/>
+  <rect x="305" y="80" width="190" height="28" rx="10" fill="#0066ff" opacity="0.2"/>
+  <text x="400" y="100" text-anchor="middle" fill="#0066ff" font-size="11" font-family="monospace">#TKT-002 IN PROGRESS</text>
+  <text x="400" y="125" text-anchor="middle" fill="#ccc" font-size="10" font-family="Arial">VPN connection issue</text>
+  <text x="400" y="143" text-anchor="middle" fill="#ccc" font-size="10" font-family="Arial">Priority: MEDIUM</text>
+  <text x="400" y="161" text-anchor="middle" fill="#0066ff" font-size="10" font-family="Arial">→ L2 Escalated</text>
+  <text x="400" y="178" text-anchor="middle" fill="#888" font-size="9" font-family="Arial">JIRA</text>
+
+  <rect x="530" y="80" width="190" height="110" rx="10" fill="#1a1a2e" stroke="#ff6600" stroke-width="1.5"/>
+  <rect x="530" y="80" width="190" height="28" rx="10" fill="#ff6600" opacity="0.2"/>
+  <text x="625" y="100" text-anchor="middle" fill="#ff6600" font-size="11" font-family="monospace">#TKT-003 RESOLVED</text>
+  <text x="625" y="125" text-anchor="middle" fill="#ccc" font-size="10" font-family="Arial">Printer driver error</text>
+  <text x="625" y="143" text-anchor="middle" fill="#ccc" font-size="10" font-family="Arial">Priority: LOW</text>
+  <text x="625" y="161" text-anchor="middle" fill="#00ff88" font-size="10" font-family="Arial">✓ Hardware Fixed</text>
+  <text x="625" y="178" text-anchor="middle" fill="#888" font-size="9" font-family="Arial">Zoho Desk</text>
+
+  <!-- Stats bar -->
+  <rect x="80" y="230" width="640" height="90" rx="12" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
+  <!-- FCR stat -->
+  <text x="200" y="262" text-anchor="middle" fill="#00ff88" font-size="28" font-family="Arial" font-weight="bold">95%</text>
+  <text x="200" y="285" text-anchor="middle" fill="#888" font-size="11" font-family="Arial">First Call Resolution</text>
+  <!-- Divider -->
+  <line x1="320" y1="245" x2="320" y2="305" stroke="#333" stroke-width="1"/>
+  <!-- SLA stat -->
+  <text x="400" y="262" text-anchor="middle" fill="#0066ff" font-size="28" font-family="Arial" font-weight="bold">L1/L2</text>
+  <text x="400" y="285" text-anchor="middle" fill="#888" font-size="11" font-family="Arial">Support Tier</text>
+  <!-- Divider -->
+  <line x1="480" y1="245" x2="480" y2="305" stroke="#333" stroke-width="1"/>
+  <!-- Tools stat -->
+  <text x="600" y="262" text-anchor="middle" fill="#ff6600" font-size="16" font-family="Arial" font-weight="bold">ServiceNow</text>
+  <text x="600" y="278" text-anchor="middle" fill="#ff6600" font-size="14" font-family="Arial">JIRA · Zoho</text>
+  <text x="600" y="295" text-anchor="middle" fill="#888" font-size="11" font-family="Arial">Ticketing Tools</text>
+  <!-- Title -->
+  <text x="400" y="370" text-anchor="middle" fill="#ffffff" font-size="16" font-family="Arial, sans-serif" font-weight="bold">Technical Support &amp; Helpdesk</text>
+</svg>

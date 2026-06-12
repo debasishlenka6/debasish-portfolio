@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="100%" style="stop-color:#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="100%" style="stop-color:#0066ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Network nodes -->
+  <circle cx="400" cy="120" r="30" fill="none" stroke="url(#accent)" stroke-width="2.5"/>
+  <rect x="376" y="107" width="48" height="26" rx="4" fill="#00ff88" opacity="0.2"/>
+  <text x="400" y="126" text-anchor="middle" fill="#00ff88" font-size="14" font-family="monospace">SW</text>
+  <!-- Left nodes -->
+  <circle cx="200" cy="250" r="22" fill="none" stroke="#0066ff" stroke-width="2"/>
+  <text x="200" y="256" text-anchor="middle" fill="#0066ff" font-size="11" font-family="monospace">L3</text>
+  <circle cx="130" cy="330" r="18" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="130" y="336" text-anchor="middle" fill="#00ff88" font-size="10" font-family="monospace">PC</text>
+  <circle cx="270" cy="330" r="18" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="270" y="336" text-anchor="middle" fill="#00ff88" font-size="10" font-family="monospace">PC</text>
+  <!-- Right nodes -->
+  <circle cx="600" cy="250" r="22" fill="none" stroke="#0066ff" stroke-width="2"/>
+  <text x="600" y="256" text-anchor="middle" fill="#0066ff" font-size="11" font-family="monospace">L2</text>
+  <circle cx="530" cy="330" r="18" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="530" y="336" text-anchor="middle" fill="#00ff88" font-size="10" font-family="monospace">PC</text>
+  <circle cx="670" cy="330" r="18" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="670" y="336" text-anchor="middle" fill="#00ff88" font-size="10" font-family="monospace">PC</text>
+  <!-- Center bottom -->
+  <circle cx="400" cy="280" r="22" fill="none" stroke="#ff6600" stroke-width="2"/>
+  <text x="400" y="286" text-anchor="middle" fill="#ff6600" font-size="10" font-family="monospace">FW</text>
+  <!-- Connections -->
+  <line x1="400" y1="150" x2="200" y2="228" stroke="url(#accent)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="400" y1="150" x2="600" y2="228" stroke="url(#accent)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="400" y1="150" x2="400" y2="258" stroke="#ff6600" stroke-width="1.5" opacity="0.6"/>
+  <line x1="200" y1="272" x2="130" y2="312" stroke="#0066ff" stroke-width="1" opacity="0.5"/>
+  <line x1="200" y1="272" x2="270" y2="312" stroke="#0066ff" stroke-width="1" opacity="0.5"/>
+  <line x1="600" y1="272" x2="530" y2="312" stroke="#0066ff" stroke-width="1" opacity="0.5"/>
+  <line x1="600" y1="272" x2="670" y2="312" stroke="#0066ff" stroke-width="1" opacity="0.5"/>
+  <!-- Internet cloud -->
+  <ellipse cx="400" cy="60" rx="60" ry="25" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="400" y="65" text-anchor="middle" fill="#888" font-size="12" font-family="monospace">INTERNET</text>
+  <line x1="400" y1="85" x2="400" y2="90" stroke="#888" stroke-width="1.5"/>
+  <!-- Labels -->
+  <text x="400" y="385" text-anchor="middle" fill="#ffffff" font-size="16" font-family="Arial, sans-serif" font-weight="bold">Network Infrastructure</text>
+  <!-- VLAN labels -->
+  <text x="200" y="240" text-anchor="middle" fill="#0066ff" font-size="9" font-family="monospace">VLAN 10</text>
+  <text x="600" y="240" text-anchor="middle" fill="#0066ff" font-size="9" font-family="monospace">VLAN 20</text>
+</svg>

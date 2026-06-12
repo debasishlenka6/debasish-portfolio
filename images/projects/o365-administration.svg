@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="100%" style="stop-color:#0d1f3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Cloud shape -->
+  <ellipse cx="400" cy="160" rx="120" ry="55" fill="none" stroke="#0078d4" stroke-width="2.5"/>
+  <ellipse cx="300" cy="185" rx="65" ry="45" fill="none" stroke="#0078d4" stroke-width="2.5"/>
+  <ellipse cx="500" cy="185" rx="65" ry="45" fill="none" stroke="#0078d4" stroke-width="2.5"/>
+  <text x="400" y="168" text-anchor="middle" fill="#0078d4" font-size="14" font-family="Arial" font-weight="bold">Microsoft 365</text>
+  <text x="400" y="188" text-anchor="middle" fill="#00ff88" font-size="11" font-family="Arial">Azure AD</text>
+  <!-- App icons -->
+  <!-- Outlook -->
+  <rect x="130" y="270" width="70" height="70" rx="12" fill="#0078d4" opacity="0.85"/>
+  <text x="165" y="300" text-anchor="middle" fill="white" font-size="10" font-family="Arial" font-weight="bold">Outlook</text>
+  <text x="165" y="320" text-anchor="middle" fill="white" font-size="22">✉</text>
+  <!-- Teams -->
+  <rect x="230" y="270" width="70" height="70" rx="12" fill="#6264a7" opacity="0.85"/>
+  <text x="265" y="300" text-anchor="middle" fill="white" font-size="10" font-family="Arial" font-weight="bold">Teams</text>
+  <text x="265" y="320" text-anchor="middle" fill="white" font-size="22">💬</text>
+  <!-- SharePoint -->
+  <rect x="330" y="270" width="70" height="70" rx="12" fill="#038387" opacity="0.85"/>
+  <text x="365" y="296" text-anchor="middle" fill="white" font-size="9" font-family="Arial" font-weight="bold">Share</text>
+  <text x="365" y="308" text-anchor="middle" fill="white" font-size="9" font-family="Arial" font-weight="bold">Point</text>
+  <text x="365" y="328" text-anchor="middle" fill="white" font-size="22">📁</text>
+  <!-- OneDrive -->
+  <rect x="430" y="270" width="70" height="70" rx="12" fill="#0364b8" opacity="0.85"/>
+  <text x="465" y="296" text-anchor="middle" fill="white" font-size="9" font-family="Arial" font-weight="bold">One</text>
+  <text x="465" y="308" text-anchor="middle" fill="white" font-size="9" font-family="Arial" font-weight="bold">Drive</text>
+  <text x="465" y="328" text-anchor="middle" fill="white" font-size="22">☁</text>
+  <!-- Exchange -->
+  <rect x="530" y="270" width="70" height="70" rx="12" fill="#0f7ac5" opacity="0.85"/>
+  <text x="565" y="296" text-anchor="middle" fill="white" font-size="9" font-family="Arial" font-weight="bold">Exchange</text>
+  <text x="565" y="316" text-anchor="middle" fill="white" font-size="22">⚡</text>
+  <!-- Users count -->
+  <rect x="630" y="270" width="70" height="70" rx="12" fill="#00ff88" opacity="0.15" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="665" y="298" text-anchor="middle" fill="#00ff88" font-size="22" font-weight="bold">200+</text>
+  <text x="665" y="318" text-anchor="middle" fill="#00ff88" font-size="10" font-family="Arial">Users</text>
+  <!-- Connecting lines from cloud -->
+  <line x1="335" y1="225" x2="165" y2="270" stroke="#0078d4" stroke-width="1" opacity="0.4" stroke-dasharray="4,3"/>
+  <line x1="360" y1="230" x2="265" y2="270" stroke="#6264a7" stroke-width="1" opacity="0.4" stroke-dasharray="4,3"/>
+  <line x1="390" y1="215" x2="365" y2="270" stroke="#038387" stroke-width="1" opacity="0.4" stroke-dasharray="4,3"/>
+  <line x1="420" y1="215" x2="465" y2="270" stroke="#0364b8" stroke-width="1" opacity="0.4" stroke-dasharray="4,3"/>
+  <line x1="450" y1="225" x2="565" y2="270" stroke="#0f7ac5" stroke-width="1" opacity="0.4" stroke-dasharray="4,3"/>
+  <line x1="480" y1="235" x2="665" y2="270" stroke="#00ff88" stroke-width="1" opacity="0.4" stroke-dasharray="4,3"/>
+  <!-- Title -->
+  <text x="400" y="375" text-anchor="middle" fill="#ffffff" font-size="16" font-family="Arial, sans-serif" font-weight="bold">Office 365 &amp; Azure AD Administration</text>
+</svg>

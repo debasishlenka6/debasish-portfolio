@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="100%" style="stop-color:#0d1f3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- WiFi signal arcs - AP 1 left -->
+  <path d="M 200 200 A 80 80 0 0 1 280 200" fill="none" stroke="#00ff88" stroke-width="3" opacity="0.9"/>
+  <path d="M 165 200 A 115 115 0 0 1 315 200" fill="none" stroke="#00ff88" stroke-width="2.5" opacity="0.6"/>
+  <path d="M 130 200 A 150 150 0 0 1 350 200" fill="none" stroke="#00ff88" stroke-width="2" opacity="0.35"/>
+  <circle cx="240" cy="200" r="10" fill="#00ff88"/>
+  <text x="240" y="240" text-anchor="middle" fill="#00ff88" font-size="10" font-family="monospace">AP-01</text>
+  <!-- WiFi signal arcs - AP 2 right -->
+  <path d="M 520 200 A 80 80 0 0 1 600 200" fill="none" stroke="#0066ff" stroke-width="3" opacity="0.9"/>
+  <path d="M 485 200 A 115 115 0 0 1 635 200" fill="none" stroke="#0066ff" stroke-width="2.5" opacity="0.6"/>
+  <path d="M 450 200 A 150 150 0 0 1 670 200" fill="none" stroke="#0066ff" stroke-width="2" opacity="0.35"/>
+  <circle cx="560" cy="200" r="10" fill="#0066ff"/>
+  <text x="560" y="240" text-anchor="middle" fill="#0066ff" font-size="10" font-family="monospace">AP-02</text>
+  <!-- Controller -->
+  <rect x="330" y="155" width="140" height="55" rx="8" fill="#1a1a2e" stroke="#00ff88" stroke-width="2"/>
+  <text x="400" y="178" text-anchor="middle" fill="#00ff88" font-size="12" font-family="Arial" font-weight="bold">UniFi Controller</text>
+  <text x="400" y="197" text-anchor="middle" fill="#888" font-size="10" font-family="monospace">Network Management</text>
+  <!-- Connections from controller to APs -->
+  <line x1="330" y1="183" x2="250" y2="200" stroke="#00ff88" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
+  <line x1="470" y1="183" x2="550" y2="200" stroke="#0066ff" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
+  <!-- DHCP Server -->
+  <rect x="340" y="80" width="120" height="45" rx="6" fill="#1a1a2e" stroke="#ff6600" stroke-width="1.5"/>
+  <text x="400" y="100" text-anchor="middle" fill="#ff6600" font-size="11" font-family="Arial" font-weight="bold">DHCP Server</text>
+  <text x="400" y="117" text-anchor="middle" fill="#888" font-size="9" font-family="monospace">192.168.1.0/24</text>
+  <line x1="400" y1="125" x2="400" y2="155" stroke="#ff6600" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
+  <!-- Client devices -->
+  <rect x="80" y="295" width="60" height="45" rx="5" fill="#1a1a2e" stroke="#00ff88" stroke-width="1"/>
+  <text x="110" y="316" text-anchor="middle" fill="#00ff88" font-size="18">💻</text>
+  <text x="110" y="333" text-anchor="middle" fill="#888" font-size="8" font-family="monospace">DHCP</text>
+  <rect x="160" y="295" width="60" height="45" rx="5" fill="#1a1a2e" stroke="#00ff88" stroke-width="1"/>
+  <text x="190" y="316" text-anchor="middle" fill="#00ff88" font-size="18">📱</text>
+  <text x="190" y="333" text-anchor="middle" fill="#888" font-size="8" font-family="monospace">DHCP</text>
+  <rect x="560" y="295" width="60" height="45" rx="5" fill="#1a1a2e" stroke="#0066ff" stroke-width="1"/>
+  <text x="590" y="316" text-anchor="middle" fill="#0066ff" font-size="18">💻</text>
+  <text x="590" y="333" text-anchor="middle" fill="#888" font-size="8" font-family="monospace">DHCP</text>
+  <rect x="640" y="295" width="60" height="45" rx="5" fill="#1a1a2e" stroke="#0066ff" stroke-width="1"/>
+  <text x="670" y="316" text-anchor="middle" fill="#0066ff" font-size="18">📱</text>
+  <text x="670" y="333" text-anchor="middle" fill="#888" font-size="8" font-family="monospace">DHCP</text>
+  <!-- Wireless lines to clients -->
+  <line x1="240" y1="210" x2="130" y2="295" stroke="#00ff88" stroke-width="1" opacity="0.4" stroke-dasharray="3,3"/>
+  <line x1="240" y1="210" x2="200" y2="295" stroke="#00ff88" stroke-width="1" opacity="0.4" stroke-dasharray="3,3"/>
+  <line x1="560" y1="210" x2="600" y2="295" stroke="#0066ff" stroke-width="1" opacity="0.4" stroke-dasharray="3,3"/>
+  <line x1="560" y1="210" x2="670" y2="295" stroke="#0066ff" stroke-width="1" opacity="0.4" stroke-dasharray="3,3"/>
+  <!-- Title -->
+  <text x="400" y="378" text-anchor="middle" fill="#ffffff" font-size="16" font-family="Arial, sans-serif" font-weight="bold">Unifi Access Points &amp; DHCP Configuration</text>
+</svg>
