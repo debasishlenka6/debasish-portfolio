@@ -1,0 +1,37 @@
+﻿
+services:
+
+  # Your portfolio website
+  portfolio:
+    build: .
+    container_name: debasish-portfolio
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    environment:
+      - ENV=production
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - portfolio-network
+
+  # Nginx as reverse proxy (load balancer)
+  nginx-proxy:
+    image: nginx:alpine
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - portfolio
+    networks:
+      - portfolio-network
+    restart: unless-stopped
+
+networks:
+  portfolio-network:
+    driver: bridge
