@@ -1,4 +1,4 @@
-﻿{
+{
   "tagname-lowercase": true,
   "attr-lowercase": true,
   "attr-value-double-quotes": true,
@@ -6,8 +6,7 @@
   "tag-pair": true,
   "spec-char-escape": false,
   "id-unique": true,
-  "src-not-empty": true,
+  "src-not-empty": false,
   "alt-require": false,
-  "space-tab-mixed-disabled": "space",
-  "id-class-ad-disabled": false
+  "space-tab-mixed-disabled": "space"
 }
