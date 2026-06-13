@@ -1,4 +1,7 @@
-# Debasish Lenka — Portfolio 🌐
+[![Build](https://github.com/debasishlenka6/debasish-portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/debasishlenka6/debasish-portfolio/actions)
+[![Docker](https://img.shields.io/docker/pulls/debasishlenka6/debasish-portfolio)](https://hub.docker.com/r/debasishlenka6/debasish-portfolio)
+[![Live](https://img.shields.io/badge/live-github%20pages-brightgreen)](https://debasishlenka6.github.io/debasish-portfolio)
+[![Security](https://img.shields.io/badge/security-dependabot-025E8C)](https://github.com/debasishlenka6/debasish-portfolio/security)# Debasish Lenka — Portfolio 🌐
 
 Personal portfolio website for **Debasish Lenka**, Systems and Network Engineer.
 
